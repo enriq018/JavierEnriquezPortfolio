@@ -1,3 +1,4 @@
+/* *{ border: 1px solid red; } */
 
 
 .navBar li {
@@ -15,10 +16,15 @@
   margin: 2px;
 }
 
+.home {
+  background-color: rgba(255, 255, 255, 0.946);
+  height: 100vh;
+}
+
 /* Laptop */
 @media (min-width: 1025px)  {
   body {
-    background-color:  yellow;
+    /* background-color:  yellow; */
   }
   .navbar {
     display: flex;
@@ -29,28 +35,28 @@
     margin-right: 130px;
   }
 
+  .drop {
+    margin-top: 75px;
+  }
   .feed {
-    /* margin-left: 200px; */
     overflow:auto;
     overflow-y:scroll;
-    height: 100vh;
+    height: 110vh;
   }
   ::-webkit-scrollbar {
     display: none;
   }
-  /* *{ border: 1px solid red; } */
 
 
 
   body {
     background: #041221;
-    /* position: fixed; */
-    /* width: 100vh; */
-    height: 100%;
-    min-height:100%;
-    padding-bottom: 20px;
 
     }
+    .viewContainer {
+      background-color: black;
+    }
+
     .card.large {
     height: 600px;
     -webkit-backface-visibility: hidden;
@@ -66,7 +72,7 @@
     #flow span {
     display: block;
     width: 200vw;
-    height: 200vw;
+    height: 190vw;
     position: absolute;
     top: -180vw;
     left: -50vw;

@@ -7,7 +7,7 @@ class MainContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      view: 'Projects',
+      view: 'Home',
     };
     this.changeView = this.changeView.bind(this);
   }
@@ -28,8 +28,10 @@ class MainContainer extends React.Component {
     return (
       <section>
         <NavBar changeView={this.changeView}/>
+        <div className="">
         {this.currentView()}
-      </section>
+        </div>
+        </section>
     );
   }
 }

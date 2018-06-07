@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 const Home = props => (
-  <div>
+  <div className="home">
     <div className="hero-body">
       <div className="container has-text-centered">
         <div className="columns is-vcentered">

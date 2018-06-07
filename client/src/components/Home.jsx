@@ -10,16 +10,25 @@ const Home = ({ resumeClick, resumeActive }) => (
         <div className="columns is-vcentered">
           <div className="column is-5">
             <figure className="image is-4by3">
-              <img src="https://picsum.photos/800/600/?random" alt="Description" />
+              <img className="homeJavi" src="https://javier-enriquez.000webhostapp.com/homeJavi.JPG" alt="Description" />
             </figure>
           </div>
           <div className="column is-6 is-offset-1">
+            <div className="headFlex">
+            <img className="headshot" src="https://javier-enriquez.000webhostapp.com/headshotCutout.jpg"
+            alt="Image" />
+
+            <div className="box">
             <h1 className="title is-1">
-              Javier Enriquez
+            Javier Enriquez
             </h1>
-            <h2 className="subtitle is-3">
+            </div>
+            <h2 className="subtitle is-3 is-italic">
+              <span className="underline">
               Software Engineer
+              </span>
             </h2>
+            </div>
             <br/>
             <div className='buttonRow'>
               <p className="has-text-centered">

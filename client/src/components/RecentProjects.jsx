@@ -1,48 +1,6 @@
 import React, { Component } from 'react';
 
-const Head = () => (
-  <header>
-    <h2>
-      <a href="#">Website Logo</a>
-    </h2>
-    <nav>
-      <li>
-        <a href="#">Home</a>
-      </li>
-      <li>
-        <a href="#">Products</a>
-      </li>
-      <li>
-        <a href="#">About</a>
-      </li>
-      <li>
-        <a href="#">Contacts</a>
-      </li>
-    </nav>
-  </header>
-);
-
-const landingstyle = { 'background-image': 'url(https://noiseaware.io/media/wysiwyg/NoiseAware_Learn_SF.png)' };
-
-const Landing = () => (
-  <section className="hero">
-  <div className="background-image" style={landingstyle}></div>
-  <div className="head">
-    <img className="headshot" src="https://javier-enriquez.000webhostapp.com/headshotCutout2.jpg"
-    alt="Image" />
-
-  </div>
-  <h1>Javier Enriquez</h1>
-  <h3>Software Engineer</h3>
-  <div className="button-group">
-    <a className="button is-info is-large">hello</a>
-    <a className="button is-info is-large">hello</a>
-    <a className="button is-info is-large">hello</a>
-  </div>
-</section>
-);
-
-const Work = () => (
+const RecentProjects = () => (
   <div>
   <section className="our-work">
   <h3 className="title">Recent Projects</h3>
@@ -100,28 +58,4 @@ const Work = () => (
   </div>
 )
 
-
-class MainContainer extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      resumeActive: false,
-    };
-  }
-  resumeClick() {
-    this.setState( (prevState, props)=> { return { resumeActive: !prevState.resumeActive}; });
-  }
-
-  render () {
-    return (
-      <div>
-        <Head />
-        <Landing />
-        <Work />
-      </div>
-
-    );
-  }
-}
-
-export default MainContainer;
+export default RecentProjects;

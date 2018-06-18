@@ -25,6 +25,13 @@ module.exports = {
         loaders: ['babel-loader?presets[]=react,presets[]=es2015'],
       },
       {
+        test: /\.css$/,
+        use: [
+          'to-string-loader',
+          'css-loader'
+        ]
+     },
+      {
         test: /\.(jpe?g|png|gif|svg)$/i,
         loaders: [
           'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',

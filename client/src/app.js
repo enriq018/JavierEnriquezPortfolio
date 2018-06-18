@@ -10,9 +10,13 @@ const App = () => (
     <Nav />
     <Landing />
     <RecentProjects />
+
+
+
   </div>
 );
 
 
 ReactDOM.render(<App />, document.getElementById('app'));
+
 

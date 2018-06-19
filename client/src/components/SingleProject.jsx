@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Caro from './Caro.jsx';
 
-const SingleProjectComponent = ({ view, changeView, projectInfo, projectPics, projectName }) => (
+const SingleProjectComponent = ({ view, changeView, projectInfo, projectPics, projectName, projectPicsInfo }) => (
   <div className="column is-6">
     <div className="card large">
       <div className="card-image">
         <h3 className="title is-dark has-text-centered project-title">{projectName}</h3>
-        <Caro pics={projectPics} />
+        <Caro pics={projectPics} info={projectPicsInfo} />
       </div>
       <div className="card-content project-background">
         <div className="buttons has-addons center">
@@ -41,6 +41,7 @@ class SingleProject extends React.Component {
         changeView={this.changeView}
         projectInfo={this.props.projectInfo}
         projectPics={this.props.projectPics}
+        projectPicsInfo={this.props.projectPicsInfo}
       />
     );
   }

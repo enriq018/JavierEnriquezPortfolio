@@ -11,10 +11,11 @@ const PopOut = ({ pic, active, enlarge }) => (
 );
 
 
-const CaroComponent = ({ pics, picIndex, activePic, enlarge, changePic }) => (
+const CaroComponent = ({ pics, picIndex, activePic, enlarge, changePic, info }) => (
   <div className="image caro">
   <PopOut pic={pics[picIndex]} active={activePic} enlarge={enlarge}/>
-    <img className="project-pic" src={pics[picIndex]} alt="Image" onClick={() => enlarge()} />
+    <img className="project-pic is-4by3" src={pics[picIndex]} alt="Image" onClick={() => enlarge()} />
+    <p className="project-background">{info[picIndex]}</p>
     <div className="caro-controls">
       <button onClick={ () => changePic('prev', true)} className="button is-info is-medium caro-button">
       <span className="icon is-large">
@@ -95,6 +96,7 @@ class Caro extends React.Component {
         enlarge={this.enlarge}
         pics={this.props.pics}
         changePic={this.changePic}
+        info={this.props.info}
       />
     );
   }

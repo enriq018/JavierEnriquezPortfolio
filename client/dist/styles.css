@@ -508,6 +508,8 @@ footer p a{
 .caro-button {
 	flex:1;
 	outline: none;
+	margin-right: 1px;
+	margin-left: 1px;
 
 
 }
@@ -528,3 +530,14 @@ footer p a{
 	margin: 5px;
 }
 
+.project-background {
+	background-color: #f2efef
+}
+
+.project-content {
+	background-color: white;
+}
+.project-title {
+	background-color: #f2efef;
+	margin: 5px 0px;
+}

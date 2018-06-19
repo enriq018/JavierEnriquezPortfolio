@@ -11,12 +11,8 @@ const App = () => (
     <Landing />
     <RecentProjects />
 
-
-
   </div>
 );
 
 
 ReactDOM.render(<App />, document.getElementById('app'));
-
-

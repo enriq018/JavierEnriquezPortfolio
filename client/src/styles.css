@@ -498,3 +498,46 @@ footer p a{
 .landing-buttons a {
 	margin: 4px;
 }
+
+.caro-controls{
+	margin-top: 5px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.caro-button {
+	flex:1;
+	outline: none;
+	margin-right: 1px;
+	margin-left: 1px;
+
+
+}
+.caro {
+
+	margin-top:-5%;
+}
+
+.content ul{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.content ul li {
+	margin: 5px;
+}
+
+.project-background {
+	background-color: #f2efef
+}
+
+.project-content {
+	background-color: white;
+}
+.project-title {
+	background-color: #f2efef;
+	margin: 5px 0px;
+}

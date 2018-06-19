@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 
 const PopOut = ({ pic, active, enlarge }) => (
   <div className={active ? "modal is-active" : "modal"} onClick={()=> enlarge()}>
-    <div className="modal-background"></div>
+    <div className="modal-background" />
     <div className="modal-content">
-      <img src={pic} alt="" id="pop-pic"/>
+      <img src={pic} alt="" id="pop-pic" />
     </div>
-    <button className="modal-close is-large" aria-label="close"></button>
+    <button className="modal-close is-large" aria-label="close" />
   </div>
 );
 
@@ -14,18 +14,20 @@ const PopOut = ({ pic, active, enlarge }) => (
 const CaroComponent = ({ pics, picIndex, activePic, enlarge, changePic }) => (
   <div className="image caro">
   <PopOut pic={pics[picIndex]} active={activePic} enlarge={enlarge}/>
-    <img className="project-pic" src={pics[picIndex]} alt="Image" onClick={() => enlarge()} className="button caro-button" />
+    <img className="project-pic" src={pics[picIndex]} alt="Image" onClick={() => enlarge()} />
     <div className="caro-controls">
-      <button onClick={ () => changePic('prev', true)} className="button is-info is-outlined caro-button">
+      <button onClick={ () => changePic('prev', true)} className="button is-info is-medium caro-button">
       <span className="icon is-large">
-      <i className="fas fa-angle-left" aria-hidden="true" />
-    </span>
+        <i className="fas fa-arrow-left" aria-hidden="true" />
+      </span>
+        <span> Previous Image </span>
       </button>
 
-      <button onClick={ () => changePic(null, true)} className="button is-primary is-outlined caro-button" >
+      <button onClick={() => changePic(null, true)} className="button is-info is-medium caro-button" >
+        <span> Next Image </span>
       <span className="icon is-large">
-      <i className="fas fa-angle-right" aria-hidden="true" />
-    </span>
+        <i className="fas fa-arrow-right" aria-hidden="true" />
+      </span>
       </button>
     </div>
   </div>
@@ -61,7 +63,7 @@ class Caro extends React.Component {
 
   changePic(direction, click) {
     if (click) {
-      this.setState({autoEnabled:false});
+      this.setState({ autoEnabled: false });
     }
 
     if (direction === 'prev') {
@@ -81,14 +83,19 @@ class Caro extends React.Component {
 
   enlarge() {
     this.setState( (prevState, props)=> {
-      return { activePic: !prevState.activePic, autoEnabled:false };
+      return { activePic: !prevState.activePic, autoEnabled: false };
     });
   }
 
   render() {
     return (
-     <CaroComponent picIndex={this.state.picIndex} activePic={this.state.activePic}
-     enlarge={this.enlarge} pics={this.props.pics} changePic={this.changePic} />
+      <CaroComponent
+        picIndex={this.state.picIndex}
+        activePic={this.state.activePic}
+        enlarge={this.enlarge}
+        pics={this.props.pics}
+        changePic={this.changePic}
+      />
     );
   }
 }

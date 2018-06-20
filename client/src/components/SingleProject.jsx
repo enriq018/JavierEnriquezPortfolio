@@ -5,7 +5,7 @@ const SingleProjectComponent = ({ view, changeView, projectInfo, projectPics, pr
   <div className="column is-6">
     <div className="card large">
       <div className="card-image">
-        <h3 className="title is-dark has-text-centered project-title">{projectName}</h3>
+        <h3 className="title is-dark has-text-centered project-title" id="proj-title">{projectName}</h3>
         <Caro pics={projectPics} info={projectPicsInfo} />
       </div>
       <div className="card-content project-background">

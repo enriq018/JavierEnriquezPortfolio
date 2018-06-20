@@ -6,6 +6,8 @@ const RecentProjects = () => (
   <div>
     <section className="our-work">
       <h3 className="title">Recent Projects</h3>
+      <hr/>
+
       <div className="row columns">
         <SingleProject
           projectInfo={ProjectInfo.twitchInfo}
@@ -28,18 +30,18 @@ const RecentProjects = () => (
           projectPicsInfo={ProjectInfo.ferretPicsInfo}
         />
         <SingleProject
-          projectInfo={ProjectInfo.twitchInfo}
-          projectName={'FunWithTwitch'}
-          projectPics={ProjectInfo.twitchPics}
-          projectPicsInfo={ProjectInfo.twitchPicsInfo}
+          projectInfo={ProjectInfo.tweetInfo}
+          projectName={'Tweet Analyzer'}
+          projectPics={ProjectInfo.tweetPics}
+          projectPicsInfo={ProjectInfo.tweetPicsInfo}
         />
       </div>
       <div className="row columns">
         <SingleProject
-          projectInfo={ProjectInfo.twitchInfo}
-          projectName={'FunWithTwitch'}
-          projectPics={ProjectInfo.twitchPics}
-          projectPicsInfo={ProjectInfo.twitchPicsInfo}
+          projectInfo={ProjectInfo.discordInfo}
+          projectName={'discordLeagueBuildBot'}
+          projectPics={ProjectInfo.discordPics}
+          projectPicsInfo={ProjectInfo.discordPicsInfo}
         />
         <SingleProject
           projectInfo={ProjectInfo.twitchInfo}

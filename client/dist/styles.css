@@ -545,6 +545,9 @@ footer p a{
 #proj-title {
 	margin-bottom: 1.7rem;
 }
+#proj-title-full {
+	padding-bottom: 18px;
+}
 
 #nav {
 	/* background: rgba(50,50,50,.95); */
@@ -569,3 +572,4 @@ img#pop-pic {
   width: 100%;
   position: absolute;
 }
+

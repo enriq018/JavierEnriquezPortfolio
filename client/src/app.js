@@ -3,35 +3,34 @@ import ReactDOM from 'react-dom';
 import NavBar from './components/NavBar.jsx';
 import Landing from './components/Landing.jsx';
 import RecentProjects from './components/RecentProjects.jsx';
+import About from './components/About.jsx';
 
-
-const About = () => (
-
-	<section className="features">
-  <h3 className="title">About Me</h3>
-  <p>I'm a results driven problem solver who's always looking to bring value to those around me while having a good time! I thrive working in new enviorments and love working on complex problems.</p>
-  <hr/>
-
-  <ul className="grid">
-    <li>
-      <i className="far fa-smile"></i>
-      <h4>Personal</h4>
-      <p>I'm a San Diego native currently living is SF with the intent of bettering the world through technology.
-      While i'm not coding, I enjoy rock climbing, anything sports/esports related (Warriors, Team Liquid, Patriots), and adventuring around SF.
-      </p>
-    </li>
-    <li>
-      <i className="fa fa-school"></i>
-      <h4>Web Development</h4>
-      <p>I'm a self taught programmer and recently completed Hack Reactor's Advanced Immersive Software Engineering Program to refine my engineering skills & best industry practices.</p>
-    </li>
-    <li>
-    <i className="fa fa-graduation-cap"></i>
-    <h4>Education</h4>
-      <p>I graduated from California State University San Marcos with a Bachelor of Arts in Criminology & Justice Studies. My goal is to help combine the power of technology with the importance of sociology</p>
-    </li>
-    </ul>
-</section>
+const SocialMedia = () => (
+  <ul>
+  <li>
+    <a>
+      <i onClick={()=> window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank')} className="fab fa-snapchat-square"></i>
+    </a>
+  </li>
+  <li>
+  <a>
+  <i onClick={()=> window.open('https://www.facebook.com/javier.enriquez.77736', '_blank')} className="fab fa-facebook-square"></i>
+  </a>
+  </li>
+  <li>
+  <a>
+  <i onClick={()=> window.open('https://github.com/enriq018/', '_blank')} className="fab fa-github-square"></i></a></li>
+  <li>
+  <a>
+    <i onClick={()=> window.open('https://www.linkedin.com/in/javier-enriquez/', '_blank')} className="fab fa-linkedin"></i>
+  </a>
+</li>
+  <li>
+    <a>
+      <i onClick={()=> window.open('https://twitter.com/_JavierEnriquez', '_blank')} className="fab fa-twitter-square"></i>
+    </a>
+  </li>
+</ul>
 )
 
 
@@ -40,6 +39,24 @@ const App = () => (
     <Landing />
     <RecentProjects />
     <About />
+
+	<footer>
+  <h1 className="title has-text-white-ter"> Contact Information</h1>
+  <h3 className="contact-info"> Phone number: (760) 613-2781 </h3>
+  <h3 className="contact-info"> Email: jav.enriquez@gmail.com </h3>
+  <h3 className="contact-info"> Location: San Francisco, California </h3>
+  <br/>
+
+  <p>Growth > Fixed mindset</p>
+  <SocialMedia />
+
+
+
+  <br/>
+  <a>Back to top</a>
+
+
+	</footer>
 
   </div>
 );

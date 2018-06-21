@@ -42,12 +42,7 @@ const RecentProjects = () => (
           projectName={'discordLeagueBuildBot'}
           projectPics={ProjectInfo.discordPics}
           projectPicsInfo={ProjectInfo.discordPicsInfo}
-        />
-        <SingleProject
-          projectInfo={ProjectInfo.twitchInfo}
-          projectName={'FunWithTwitch'}
-          projectPics={ProjectInfo.twitchPics}
-          projectPicsInfo={ProjectInfo.twitchPicsInfo}
+          full={true}
         />
       </div>
     </section>

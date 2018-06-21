@@ -6,7 +6,7 @@ const landingstyle = {
 };
 
 const LandingComponent = ({ resumeClick, resumeActive }) => (
-  <section className="hero">
+  <section className="hero" id="landing">
     <Resume resumeClick={resumeClick} resumeActive={resumeActive} />
     <div className="background-image" style={landingstyle} />
     <div className="head">

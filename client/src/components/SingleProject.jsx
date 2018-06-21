@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Caro from './Caro.jsx';
 
-const SingleProjectComponent = ({ view, changeView, projectInfo, projectPics, projectName, projectPicsInfo }) => (
-  <div className="column is-6">
+const SingleProjectComponent = ({ view, changeView, projectInfo, projectPics, projectName, projectPicsInfo, full=false}) => (
+  <div className={full ? "column is-full" : "column is-6"}>
     <div className="card large">
       <div className="card-image">
-        <h3 className="title is-dark has-text-centered project-title" id="proj-title">{projectName}</h3>
+        <h3 className="title is-dark has-text-centered project-title" id={full ? "proj-title-full" : "proj-title"}>{projectName}</h3>
         <Caro pics={projectPics} info={projectPicsInfo} />
       </div>
       <div className="card-content project-background">
@@ -32,6 +32,9 @@ class SingleProject extends React.Component {
   changeView(view) {
     this.setState({ view });
   }
+  componentWillMount() {
+    console.log(this.props.full)
+  }
 
   render() {
     return (
@@ -42,6 +45,7 @@ class SingleProject extends React.Component {
         projectInfo={this.props.projectInfo}
         projectPics={this.props.projectPics}
         projectPicsInfo={this.props.projectPicsInfo}
+        full={this.props.full}
       />
     );
   }

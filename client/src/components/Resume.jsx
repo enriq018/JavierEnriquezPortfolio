@@ -14,14 +14,16 @@ const Resume = ({ resumeClick, resumeActive}) => (
           <img className="resumeModal" src="https://javier-enriquez.000webhostapp.com/JavierEnriquezResume-page-001.jpg" alt="Javier Resume" />
         </section>
         <footer className="modal-card-foot">
+        <div className="resumeFooter">
           <a className="button is-success " href="https://javier-enriquez.000webhostapp.com/JavierEnriquezResume.pdf" download>
             <span>Download as a PDF </span>
             <span className="icon is-large">
               <i className="fas fa-download" aria-hidden="true" />
             </span>
           </a>
-          <button onClick={()=> resumeClick()} className="button"> Cancel
+          <button onClick={()=> resumeClick()} className="button"> Close
           </button>
+        </div>
         </footer>
       </div>
   </div>

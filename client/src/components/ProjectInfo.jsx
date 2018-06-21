@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 
+/* Clean this file up later */
+
 const randomTagColor = () => {
   const getRandomInt = (min, max) => {
     min = Math.ceil(min);
     max = Math.floor(max) - 1;
-    return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+    return Math.floor(Math.random() * (max - min)) + min;
   };
   const tags = ['tag is-black', 'tag is-primary', 'tag is-link', 'tag is-info', 'tag is-success', 'tag is-warning', 'tag is-danger'];
   return tags[getRandomInt(0, tags.length)] + ' is-large';
@@ -356,49 +358,16 @@ const tweetInfo = {
     'Full Description':
     <div className="project-content">
       <p className="has-text-left">
-      WeAreFerrets allows multiple users to join various rooms together and
-      view Youtube video content simultaneously. This is accomplished through
-      the use of{" "}
-      <strong className="has-text-weight-bold bigText">
-        React Router
-      </strong>{" "}
-      to reroute a user to a specific room and using{" "}
-      <strong className="has-text-weight-bold bigText">
-        Socket.IO{" "}
-      </strong>{" "}
-      to give each room its own unique websocket connection allowing all users
-      within the room to interact with one another.
-      </p>
-      <br />
+        This application uses the username of a searched twitter user and finds the user's most recent tweets.
+        On the backend it recieves the tweets takes each tweet, and sends it to IBM Watson tone analyzer to get the overall tones of
+        the particular tweet. This information is then all visuallized on the frontend and shows what the searched users most common
+        tweet tones were as well as each tweet individually analyzed.
+        <br/>
+        <br/>
 
-      <p className="has-text-left">
-      Each unique room id is stored within the{" "}
-        <strong className="has-text-weight-bold bigText">
-          Postgres
-        </strong>{" "}
-        database and is used to identify what current playlist is connected to
-        each room as well as what the current video/current play time of playing
-        video is. Inside of a room, user’s can search for new Youtube videos to
-        be added to the video queue, and chat with one another through the built
-        in chat client. If a user sign’s in via{" "}
-        <strong className="has-text-weight-bold bigText">
-          Facebook authentication
-        </strong>, they are given the ability to create rooms that others can
-        join and contribute to.
+        For example a tweet saying "today is the best day ever" would result in a Joyful tone.
       </p>
     </div>,
-
-  'Video Demo':  <div className="project-content">
-  <div className="video-responsive">
-  <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/JxUqPo_67IE"
-    frameBorder="10"
-    allowFullScreen
-  />
-  </div>
-</div>,
 };
 
 const discordPics = [
@@ -413,70 +382,34 @@ const discordPicsInfo = [
 ];
 
 const discordInfo = {
-
   Overview:
   <div className="project-content">
-    <p className="has-text-left">
-    Search a twitter user and see each tweet's tone analyzied as well as what the most common tone the user had overall.
-    </p>
-  </div>,
+  <p className="has-text-left">
+  A bot that responds with information relevant to the request a user asks of it.
+  </p>
+</div>,
 
-    Stack:
-    <div className="project-content">
-      <ul className="stack-info">
-        <li><div className={randomTagColor()}>Front End: React.js / Victory.js</div></li>
-        <li><div className={randomTagColor()}>Server: Node.js</div></li>
-        <li><div className={randomTagColor()}>API: IBM Watson Tone Analyzer</div></li>
-        <li><div className={randomTagColor()}>API: Twitter</div></li>
-        <li><div className={randomTagColor()}>Deployment: Heroku</div></li>
-      </ul></div>,
+  Stack:
+  <div className="project-content">
+    <ul className="stack-info">
+      <li><div className={randomTagColor()}>Server: Node.js</div></li>
+      <li><div className={randomTagColor()}>Deployment: Heroku</div></li>
+      <li><div className={randomTagColor()}>discord.js</div></li>
+      <li><div className={randomTagColor()}>Webscraping</div></li>
+    </ul></div>,
 
     'Full Description':
     <div className="project-content">
-      <p className="has-text-left">
-      WeAreFerrets allows multiple users to join various rooms together and
-      view Youtube video content simultaneously. This is accomplished through
-      the use of{" "}
-      <strong className="has-text-weight-bold bigText">
-        React Router
-      </strong>{" "}
-      to reroute a user to a specific room and using{" "}
-      <strong className="has-text-weight-bold bigText">
-        Socket.IO{" "}
-      </strong>{" "}
-      to give each room its own unique websocket connection allowing all users
-      within the room to interact with one another.
-      </p>
-      <br />
-
-      <p className="has-text-left">
-      Each unique room id is stored within the{" "}
-        <strong className="has-text-weight-bold bigText">
-          Postgres
-        </strong>{" "}
-        database and is used to identify what current playlist is connected to
-        each room as well as what the current video/current play time of playing
-        video is. Inside of a room, user’s can search for new Youtube videos to
-        be added to the video queue, and chat with one another through the built
-        in chat client. If a user sign’s in via{" "}
-        <strong className="has-text-weight-bold bigText">
-          Facebook authentication
-        </strong>, they are given the ability to create rooms that others can
-        join and contribute to.
-      </p>
+    <p className="has-text-left">
+    The bot is always listening to on a discord channel. Anytime a user pings the bot with a specific
+    request, the bot replies to the user confirming it has recieved the request and is working on completing its task.
+    <br/>
+    <br/>
+    The information for each task is gathered through either webscraping specific sites, taking a
+    screenshot of a certain web pages, or reading information from an internally stored file.
+    The data generated is then all complied and sent back in a message format. Some response messages also include an image.
+  </p>
     </div>,
-
-  'Video Demo':  <div className="project-content">
-  <div className="video-responsive">
-  <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/JxUqPo_67IE"
-    frameBorder="10"
-    allowFullScreen
-  />
-  </div>
-</div>,
 };
 
 
@@ -496,10 +429,6 @@ const ProjectInfo = {
   discordPics,
   discordPicsInfo,
   discordInfo,
-}
+};
 
 export default ProjectInfo;
-
-
-
-

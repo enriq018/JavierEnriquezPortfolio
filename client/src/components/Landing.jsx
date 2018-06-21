@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Resume from './Resume.jsx';
 
 const landingstyle = {
-  'background-image': 'url(https://noiseaware.io/media/wysiwyg/NoiseAware_Learn_SF.png)'
+  'backgroundImage': 'url(https://noiseaware.io/media/wysiwyg/NoiseAware_Learn_SF.png)'
 };
 
 const LandingComponent = ({ resumeClick, resumeActive }) => (

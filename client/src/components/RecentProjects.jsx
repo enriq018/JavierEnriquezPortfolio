@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import SingleProject from './SingleProject.jsx';
 import ProjectInfo from './ProjectInfo.jsx';
 
+
 const RecentProjects = () => (
   <div>
     <section className="our-work">

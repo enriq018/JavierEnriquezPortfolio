@@ -39,7 +39,8 @@ class Caro extends React.Component {
     super(props);
     this.state = {
       picIndex: 0,
-      autoEnabled: true,
+      // for pics to auto change
+      autoEnabled: false,
       activePic: false,
     };
     this.changePic = this.changePic.bind(this);

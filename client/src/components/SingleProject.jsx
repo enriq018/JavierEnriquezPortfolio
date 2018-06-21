@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Caro from './Caro.jsx';
 
 const SingleProjectComponent = ({ view, changeView, projectInfo, projectPics, projectName, projectPicsInfo, full=false}) => (
-  <div className={full ? "column is-full" : "column is-6"}>
+  <div className={full ? "column is-10 is-offset-1" : "column is-6"}>
     <div className="card large">
       <div className="card-image">
         <h3 className="title is-dark has-text-centered project-title" id={full ? "proj-title-full" : "proj-title"}>{projectName}</h3>
@@ -10,7 +10,7 @@ const SingleProjectComponent = ({ view, changeView, projectInfo, projectPics, pr
       </div>
       <div className="card-content project-background">
         <div className="buttons has-addons center">
-          {Object.keys(projectInfo).map((el, i) => <a onClick={() => changeView(el)}
+          {Object.keys(projectInfo).map((el, i) => <a key={i} onClick={() => changeView(el)}
           className="button is-dark is-outlined caro-button">{el}</a>)}
         </div>
         <div className="content">
@@ -31,9 +31,6 @@ class SingleProject extends React.Component {
   }
   changeView(view) {
     this.setState({ view });
-  }
-  componentWillMount() {
-    console.log(this.props.full)
   }
 
   render() {

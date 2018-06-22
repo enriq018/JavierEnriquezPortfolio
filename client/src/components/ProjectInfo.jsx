@@ -113,7 +113,7 @@ const triInfo = {
   Overview:
   <div className="project-content">
     <p className="has-text-left">
-    Replicated Airbnb microservice architecture to test specific user interations and monitor data flow.</p>
+    Replicated Airbnb microservice architecture to test specific user interactions and monitor data flow.</p>
   </div>,
 
     Stack:
@@ -328,12 +328,10 @@ const tweetPics = [
 ];
 
 const tweetPicsInfo = [
-  'Tweets view with twitter user Barrack Obama analyzed',
-  'Chart view with twitter user Barrack Obama results',
+  'Tweets view with twitter user Barack Obama analyzed',
+  'Chart view with twitter user Barack Obama results',
   'Tweets view with twitter user Steph Curry analyzed',
   'Chart view with twitter user Steph Curry results',
-
-
 ];
 
 const tweetInfo = {
@@ -341,7 +339,7 @@ const tweetInfo = {
   Overview:
   <div className="project-content">
     <p className="has-text-left">
-    Search a twitter user and see each tweet's tone analyzied as well as what the most common tone the user had overall.
+    Search a twitter user and see each tweet's tone analyzed as well as what the most common tone the user had overall.
     </p>
   </div>,
 

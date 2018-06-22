@@ -79,9 +79,9 @@ section h3.title{
 }
 
 section p{
+/*	margin-bottom: 35px;  REMOVED AFTER DEP BUG */
 	max-width: 800px;
 	text-align: center;
-	margin-bottom: 35px;
 	padding: 0 20px;
 	line-height: 2;
 }

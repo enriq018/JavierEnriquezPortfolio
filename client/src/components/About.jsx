@@ -5,18 +5,17 @@ const About = () => (
   <section className="features">
     <h3 className="title">About Me</h3>
     <p>I'm a results driven problem solver who's always looking to bring value to those around me
-     while having a good time! I thrive working in new enviorments and love working on complex
-      problems.</p>
+     while having a good time! I thrive in new environments and enjoy working on complex problems.</p>
     <hr/>
 
     <ul className="grid">
       <li>
         <i className="fas fa-user-circle"></i>
         <h4>Personal</h4>
-        <p>I'm a San Diego native currently living in SF with the intent of bettering the world
+        <p>I'm a San Diego native currently living in San Francisco with the intent of bettering the world
         through technology.
-        While i'm not coding, I enjoy rock climbing, anything sports/esports related (Warriors,
-          Team Liquid, Patriots), and adventuring around SF.
+        When I'm not coding you can find me rock climbing, keeping up with anything sports/esports related (Warriors,
+          Team Liquid, Patriots), or adventuring around SF.
         </p>
       </li>
       <li>
@@ -31,7 +30,7 @@ const About = () => (
       <h4>Education</h4>
         <p>I graduated from California State University San Marcos with a Bachelor of Arts in
          Criminology & Justice Studies. My goal is to help combine the power of technology with
-         the importance of sociology.
+         the depths of sociology.
         </p>
       </li>
       </ul>
